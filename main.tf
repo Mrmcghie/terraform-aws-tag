@@ -29,6 +29,7 @@ locals {
     tag_key_case           = var.tag_key_case == null ? var.context.tag_key_case : var.tag_key_case
     tag_value_case         = var.tag_value_case == null ? var.context.tag_value_case : var.tag_value_case
     random_string          = var.random_string == null ? var.context.random_string : var.random_string
+    agency_code            = var.agency code == null? var.agency_code :var.agency_code
   }
 
   enabled                = local.input.enabled
@@ -113,5 +114,7 @@ locals {
     tag_key_case           = local.tag_key_case
     tag_value_case         = local.tag_value_case
     random_string          = local.random_string
+    agency_code            = local.agency_code
+    
   }
 }
